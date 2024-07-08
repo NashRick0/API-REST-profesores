@@ -3,7 +3,7 @@ const mysql = require('mysql2');
 const bodyParser = require('body-parser');
 const cors = require('cors')
 const app = express();
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 4000;
 app.use(bodyParser.json());
 app.use(cors());
 
@@ -106,5 +106,5 @@ app.all("*", (req, res)=>{
 });
 
 app.listen(port, ()=>{
-    console.log("Escuchando en el puerto 5000");
+    console.log("Escuchando en el puerto 4000");
 });
